@@ -7,5 +7,9 @@ get '/' do
 end
 
 get '/secret' do
-  "I am a secret fdhsajgjhadshb"
+  "I am a secret server"
+end
+
+get '/secret/third_route' do
+  "Route numero threeio"
 end

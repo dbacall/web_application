@@ -18,7 +18,12 @@ get '/secret/third_route' do
   "Route numero threeio"
 end
 
-get '/cat' do 
+get '/random-cat' do 
   @cat_names = ["Jess", "Frodo", "Leo"].sample
+  erb(:index)
+end
+
+get '/named-cat' do 
+  @cat_names = params[:name]
   erb(:index)
 end

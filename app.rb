@@ -1,5 +1,9 @@
 require 'sinatra'
 
+
+
+
+
 set :session_secret, 'super secret'
 
 get '/' do
@@ -15,5 +19,6 @@ get '/secret/third_route' do
 end
 
 get '/cat' do 
+  @cat_names = ["Jess", "Frodo", "Leo"].sample
   erb(:index)
 end
